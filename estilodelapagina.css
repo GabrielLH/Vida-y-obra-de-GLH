@@ -1,0 +1,37 @@
+body{ 
+	background-color: LightSteelBlue;
+
+	border-Style:solid;
+	border-width:10px;
+	border-color:Red;
+}
+
+
+.centrado{
+	text-align:center;
+}
+
+
+.cita{	
+	background-color: yellow;
+}
+
+
+.borde1{border-Style:solid;
+	border-width:10px;
+	border-color:blue;}
+
+
+.borde5{border-top-width:5px;
+	border-top-style:groove;
+	border-top-color:red;
+
+
+	border-bottom-width:3px;
+	border-bottom-style:solid;
+	border-bottom-color:green;
+	margin:80px;
+	
+	padding-top:50px;
+	padding-bottom:30px;}
+
