@@ -1,0 +1,245 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./EstiloIQ.css">
+    <script type="text/javaScript">
+
+    var puntuacion=0;
+    var año=20;
+        
+    var mex=20;
+    var pp=10;
+    var smo=30;
+        
+    var nv=50;
+    var ths=40;
+    var vsi=30;
+    var nib=20;
+    var chl=10;
+        
+    var h3=20;
+    var h4=20;
+    var gow=10;
+    var sc=10;
+    var tloz=30;
+        
+    var bbt=10;
+    var cctm=20;
+    var drh=20;
+    var twd=10;
+    var got=20;
+    
+    var creo=20;
+    var nocreo=20;
+    
+        //libros
+        var Img2Array=[
+            "./img/imglibros/Elnombredelviento1.png",
+            "./img/imglibros/Eltemordeunhombresabio1.png",
+            "./img/imglibros/Lasventajasdeserinvicible1.png",
+            "./img/imglibros/Elciclodelhombrelobo1.png",
+            "./img/imglibros/Laniebla1.jpg"
+        ];
+        
+        //juegos
+        var Img4Array=[
+            "./img/imgjuegos/Halo41.png",
+            "./img/imgjuegos/Halo31.png",
+            "./img/imgjuegos/Gearsofwar1.png",
+            "./img/imgjuegos/Zelda1.png",
+            "./img/imgjuegos/Starcraft1.png",
+        ];
+        
+        //series
+       var Img5Array=[
+            "./img/imgSeriesYanimacicon/bigbang1.jpg",
+            "./img/imgSeriesYanimacicon/tumadre1.jpg",
+            "./img/imgSeriesYanimacicon/DrHouse1.jpg",
+            "./img/imgSeriesYanimacicon/twd1.jpg",
+            "./img/imgSeriesYanimacicon/got1.jpg",
+        ];
+
+        function ChangeImg2(img2Ptr){
+            document.getElementById('CommonImg2').src=Img2Array[img2Ptr];
+        }
+        
+        function ChangeImg3(img3Ptr){
+            document.getElementById('CommonImg3').src=Img2Array[img3Ptr];
+        }
+        
+        function ChangeImg4(img4Ptr){
+            document.getElementById('CommonImg4').src=Img4Array[img4Ptr];
+        }
+        
+        function ChangeImg5(img5Ptr){
+            document.getElementById('CommonImg5').src=Img5Array[img5Ptr];
+        }
+        
+
+        function Result(){
+            //Año
+            var Estilo1=document.getElementById("año94").checked;
+            var Estilo2=document.getElementById("año95").checked;
+            var Estilo3=document.getElementById("año95").checked;
+            
+            //viaje
+            var viajes1=document.getElementById("viaje1").checked;
+            var viajes2=document.getElementById("viaje2").checked;
+            var viajes3=document.getElementById("viaje3").checked;
+            
+            //Libros
+            var Pasatiempo1=document.getElementById("Actividad1").checked;
+            var Pasatiempo2=document.getElementById("Actividad2").checked;
+            var Pasatiempo3=document.getElementById("Actividad3").checked;
+            var Pasatiempo4=document.getElementById("Actividad4").checked;
+            var Pasatiempo5=document.getElementById("Actividad5").checked;
+            
+            //libros no
+            var nolibro1=document.getElementById("librosno1").checked;
+            var nolibro2=document.getElementById("librosno2").checked;
+            var nolibro3=document.getElementById("librosno3").checked;
+            var nolibro4=document.getElementById("librosno4").checked;
+            var nolibro5=document.getElementById("librosno5").checked;
+            
+            //juegos
+            var play1=document.getElementById("juegos1").checked;
+            var play2=document.getElementById("juegos2").checked;
+            var play3=document.getElementById("juegos3").checked;
+            var play4=document.getElementById("juegos4").checked;
+            var play5=document.getElementById("juegos5").checked;
+            
+            //series
+            var programa1=document.getElementById("series1").checked;
+            var programa2=document.getElementById("series1").checked;
+            var programa3=document.getElementById("series1").checked;
+            var programa4=document.getElementById("series1").checked;
+            var programa5=document.getElementById("series1").checked;
+            
+            //vidamuerte
+            var duda1=document.getElementById("pregunta1").checked;
+            var duda2=document.getElementById("pregunta2").checked;
+            
+            //puntuacion año
+            if(Estilo1==true){ puntuacion=puntuacion+año;}
+            if(Estilo2==true){ puntuacion=puntuacion-año;}
+            if(Estilo3==true){ puntuacion=puntuacion-año;}
+            
+            //puntuacion viajes
+            if(viajes1==true){puntuacion=puntuacion+mex}
+            if(viajes2==true){puntuacion=puntuacion+pp}
+            if(viajes3==true){puntuacion=puntuacion+smo}
+            
+            //puntuacion Libros
+            if(Pasatiempo1==true){puntuacion=puntuacion+nv}
+            if(Pasatiempo2==true){puntuacion=puntuacion+ths}
+            if(Pasatiempo3==true){puntuacion=puntuacion+vsi}
+            if(Pasatiempo4==true){puntuacion=puntuacion+nib}
+            if(Pasatiempo5==true){puntuacion=puntuacion+chl}
+            
+            //puntuacion libros no
+            if(nolibro1==true){puntuacion=puntuacion-nv}
+            if(nolibro2==true){puntuacion=puntuacion-ths}
+            if(nolibro3==true){puntuacion=puntuacion-vsi}
+            if(nolibro4==true){puntuacion=puntuacion+nib}
+            if(nolibro5==true){puntuacion=puntuacion+chl}
+            
+            //puntuacion videojuegos
+            if(play1==true){puntuacion=puntuacion+h4}
+            if(play2==true){puntuacion=puntuacion+h3}
+            if(play3==true){puntuacion=puntuacion+gow}
+            if(play4==true){puntuacion=puntuacion+tloz}
+            if(play5==true){puntuacion=puntuacion+sc}
+            
+            //puntuacion serie
+            if(programa1==true){puntuacion=puntuacion+bbt}
+            if(programa2==true){puntuacion=puntuacion+cctm}
+            if(programa3==true){puntuacion=puntuacion+drh}
+            if(programa4==true){puntuacion=puntuacion+twd}
+            if(programa5==true){puntuacion=puntuacion+got}
+            
+            //puntuacion vidamuerte
+            if(duda1==true){puntuacion=puntuacion+creo}
+            if(duda2==true){puntuacion=puntuacion-nocreo}
+            
+            
+            //Resultados
+            if(iq>0){ alert("Tu puntuacion es intelectual es: "+puntuacion); }
+            else{ alert("Tu coeficiente intelectual es: 0") }
+            location.reload(true);
+        }
+    </script>
+</head>
+    
+<body>
+<div class="wrap">
+    <form action="" class="formulario">
+        <div class="radio">
+            <h1 align="center">Veamos que tanto me conoces</h1><br>
+            <h2>&#191;En qu&#233; a&#241;o nac&#237;&#63;</h2>
+            <input type="radio" id="año94" name="m1"checked><label for="año94">1994</label>
+            <input type="radio" id="año95" name="m1"><label for="año95">1995</label>  
+            <input type="radio" id="año96" name="m1"><label for="año96">1996</label>
+            
+            <br>
+            <br>
+            <br>
+            <h2>&#191;Cu&#225;l de estos viajes me gusto mas&#63;</h2>
+            <input type="radio" id="viaje1" name="m2"checked><label for="viaje1">Cd. M&#233;xico </label>
+            <input type="radio" id="viaje2" name="m2"><label for="viaje2">Pe&#241;asco</label>  
+            <input type="radio" id="viaje3" name="m2"><label for="viaje3">Santa Mar&#237;a del Oro</label>
+            
+            <br>
+            <br>
+            <br>
+             <h2>&#191;Cu&#225;l de estos libros me gusta mas&#63;</h2>
+            <input type="radio" id="Actividad1" name="a1" value="0" onclick="ChangeImg2(this.value)" checked><label for="Actividad1">El nombre del viento</label>
+            <input type="radio" id="Actividad2" name="a1" value="1" onclick="ChangeImg2(this.value)"><label for="Actividad2">El temor de un hombre sabio</label>
+            <input type="radio" id="Actividad3" name="a1" value="2" onclick="ChangeImg2(this.value)"><label for="Actividad3">Las ventajas de ser invisible</label>
+            <input type="radio" id="Actividad4" name="a1" value="3" onclick="ChangeImg2(this.value)"><label for="Actividad4">El ciclo del Hombre lobo</label> 
+            <input type="radio" id="Actividad5" name="a1" value="4" onclick="ChangeImg2(this.value)"><label for="Actividad5">La niebla</label><br><br>
+            <img id="CommonImg2" src="" alt="" height="150" width="150">
+            
+            <br>
+            <br>
+            <br>
+             <h2>&#191;Cu&#225;l de estos libro me gusto menos&#63;</h2>
+            <input type="radio" id="librono1" name="a2" value="0" onclick="ChangeImg3(this.value)" checked><label for="librono1">El nombre del viento</label>
+            <input type="radio" id="librono2" name="a2" value="1" onclick="ChangeImg3(this.value)"><label for="librono2">El temor de un hombre sabio</label>
+            <input type="radio" id="librono3" name="a2" value="2" onclick="ChangeImg3(this.value)"><label for="librono3">Las ventajas de ser invisible</label>
+            <input type="radio" id="librono4" name="a2" value="3" onclick="ChangeImg3(this.value)"><label for="librono4">El ciclo del Hombre lobo</label> 
+            <input type="radio" id="librono5" name="a2" value="4" onclick="ChangeImg3(this.value)"><label for="librono5">La niebla</label><br><br>
+            <img id="CommonImg3" src="" alt="" height="150" width="150">
+            
+            <h2>&#191;Cu&#225;l de estos videojuegos crees me gusta m&#225;s&#63;</h2>
+            <input type="radio" id="juegos1" name="j2" value="0" onclick="ChangeImg4(this.value)" checked><label for="juegos1">Halo 4</label>
+            <input type="radio" id="juegos2" name="j2" value="1" onclick="ChangeImg4(this.value)"><label for="juegos2">Halo 3</label>
+            <input type="radio" id="juegos3" name="j2" value="2" onclick="ChangeImg4(this.value)"><label for="juegos3">Gears of War 3</label>
+            <input type="radio" id="juegos4" name="j2" value="3" onclick="ChangeImg4(this.value)"><label for="juegos4">The legend of Zelda Ocarina of Time</label> 
+            <input type="radio" id="juegos5" name="j2" value="4" onclick="ChangeImg4(this.value)"><label for="juegos5">StarCraft2</label><br><br>
+            <img id="CommonImg4" src="" alt="" height="150" width="150"> 
+            
+            <h2>&#191;Cu&#225;l de estas serie me gusta mas&#63;</h2>
+            <input type="radio" id="series1" name="s1" value="0" onclick="ChangeImg5(this.value)" checked><label for="series1">La teor&#237;a del big bang</label>
+            <input type="radio" id="series2" name="s1" value="1" onclick="ChangeImg5(this.value)"><label for="series2">Como conoc&#237; a tu madre</label>
+            <input type="radio" id="series3" name="s1" value="2" onclick="ChangeImg5(this.value)"><label for="series3">Dr. House</label>
+            <input type="radio" id="series4" name="s1" value="3" onclick="ChangeImg5(this.value)"><label for="series4">The Walking Dead</label> 
+            <input type="radio" id="series5" name="s1" value="4" onclick="ChangeImg5(this.value)"><label for="series5">Game of Thrones</label><br><br>
+            <img id="CommonImg5" src="" alt="" height="150" width="150"> 
+            
+            <h2>&#191;Creo en la vida despu&#233;s de la muerte&#63;</h2>
+            <input type="radio" id="pregunta1" name="p1"checked><label for="pregunta1">Si</label>
+            <input type="radio" id="pregunta2" name="p1"><label for="pregunta2">No</label>  
+        </div>
+        
+    
+        <br><input type="button" value="Resultado" onclick="Result()">
+    </form>
+    <br>
+<br>
+<br>
+
+<A HREF="../Inicio.html"><h1>Volver a Inicio</h1><A>
+</div>
+</body>
+</html>
