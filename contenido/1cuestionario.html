@@ -5,33 +5,7 @@
     <link rel="stylesheet" type="text/css" href="./EstiloIQ.css">
     <script type="text/javaScript">
 
-    var puntuacion=0;
-    var año=20;
-        
-    var mex=20;
-    var pp=10;
-    var smo=30;
-        
-    var nv=50;
-    var ths=40;
-    var vsi=30;
-    var nib=20;
-    var chl=10;
-        
-    var h3=20;
-    var h4=20;
-    var gow=10;
-    var sc=10;
-    var tloz=30;
-        
-    var bbt=10;
-    var cctm=20;
-    var drh=20;
-    var twd=10;
-    var got=20;
-    
-    var creo=20;
-    var nocreo=20;
+
     
         //libros
         var Img2Array=[
@@ -120,52 +94,12 @@
             var duda1=document.getElementById("pregunta1").checked;
             var duda2=document.getElementById("pregunta2").checked;
             
-            //puntuacion año
-            if(Estilo1==true){ puntuacion=puntuacion+año;}
-            if(Estilo2==true){ puntuacion=puntuacion-año;}
-            if(Estilo3==true){ puntuacion=puntuacion-año;}
-            
-            //puntuacion viajes
-            if(viajes1==true){puntuacion=puntuacion+mex}
-            if(viajes2==true){puntuacion=puntuacion+pp}
-            if(viajes3==true){puntuacion=puntuacion+smo}
-            
-            //puntuacion Libros
-            if(Pasatiempo1==true){puntuacion=puntuacion+nv}
-            if(Pasatiempo2==true){puntuacion=puntuacion+ths}
-            if(Pasatiempo3==true){puntuacion=puntuacion+vsi}
-            if(Pasatiempo4==true){puntuacion=puntuacion+nib}
-            if(Pasatiempo5==true){puntuacion=puntuacion+chl}
-            
-            //puntuacion libros no
-            if(nolibro1==true){puntuacion=puntuacion-nv}
-            if(nolibro2==true){puntuacion=puntuacion-ths}
-            if(nolibro3==true){puntuacion=puntuacion-vsi}
-            if(nolibro4==true){puntuacion=puntuacion+nib}
-            if(nolibro5==true){puntuacion=puntuacion+chl}
-            
-            //puntuacion videojuegos
-            if(play1==true){puntuacion=puntuacion+h4}
-            if(play2==true){puntuacion=puntuacion+h3}
-            if(play3==true){puntuacion=puntuacion+gow}
-            if(play4==true){puntuacion=puntuacion+tloz}
-            if(play5==true){puntuacion=puntuacion+sc}
-            
-            //puntuacion serie
-            if(programa1==true){puntuacion=puntuacion+bbt}
-            if(programa2==true){puntuacion=puntuacion+cctm}
-            if(programa3==true){puntuacion=puntuacion+drh}
-            if(programa4==true){puntuacion=puntuacion+twd}
-            if(programa5==true){puntuacion=puntuacion+got}
-            
-            //puntuacion vidamuerte
-            if(duda1==true){puntuacion=puntuacion+creo}
-            if(duda2==true){puntuacion=puntuacion-nocreo}
+
             
             
             //Resultados
             if(iq>0){ alert("Tu puntuacion es intelectual es: "+puntuacion); }
-            else{ alert("Tu coeficiente intelectual es: 0") }
+            
             location.reload(true);
         }
     </script>
