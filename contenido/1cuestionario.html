@@ -5,7 +5,33 @@
     <link rel="stylesheet" type="text/css" href="./EstiloIQ.css">
     <script type="text/javaScript">
 
-
+    var puntuacion=0;
+    var anio=20;
+        
+    var mexico=20;
+    var puertop=10;
+    var smoro=30;
+        
+    var nviento=50;
+    var thsabio=40;
+    var vsinvisible=30;
+    var niebla=20;
+    var chlobo=10;
+        
+    var halo3=20;
+    var halo4=20;
+    var gowar=10;
+    var scraft=10;
+    var tlozelda=30;
+        
+    var bbteory=10;
+    var cctmadre=20;
+    var drhouse=20;
+    var twdead=10;
+    var gothrones=20;
+    
+    var creo=20;
+    var nocreo=20;
     
         //libros
         var Img2Array=[
@@ -33,6 +59,7 @@
             "./img/imgSeriesYanimacicon/twd1.jpg",
             "./img/imgSeriesYanimacicon/got1.jpg",
         ];
+              
 
         function ChangeImg2(img2Ptr){
             document.getElementById('CommonImg2').src=Img2Array[img2Ptr];
@@ -53,9 +80,9 @@
 
         function Result(){
             //Año
-            var Estilo1=document.getElementById("año94").checked;
-            var Estilo2=document.getElementById("año95").checked;
-            var Estilo3=document.getElementById("año95").checked;
+            var Estilo1=document.getElementById("anio94").checked;
+            var Estilo2=document.getElementById("anio95").checked;
+            var Estilo3=document.getElementById("anio95").checked;
             
             //viaje
             var viajes1=document.getElementById("viaje1").checked;
@@ -94,13 +121,59 @@
             var duda1=document.getElementById("pregunta1").checked;
             var duda2=document.getElementById("pregunta2").checked;
             
-
+            //puntuacion año
+            if(Estilo1==true){ puntuacion=puntuacion+anioo;}
+            if(Estilo2==true){ puntuacion=puntuacion-anio;}
+            if(Estilo3==true){ puntuacion=puntuacion-anio;}
+            
+            //puntuacion viajes
+            if(viajes1==true){puntuacion=puntuacion+mexico;}
+            if(viajes2==true){puntuacion=puntuacion+puertop;}
+            if(viajes3==true){puntuacion=puntuacion+smoro;}
+            
+            //puntuacion Libros
+            if(Pasatiempo1==true){puntuacion=puntuacion+nviento;}
+            if(Pasatiempo2==true){puntuacion=puntuacion+thsabio;}
+            if(Pasatiempo3==true){puntuacion=puntuacion+vsinvisible;}
+            if(Pasatiempo4==true){puntuacion=puntuacion+niebla;}
+            if(Pasatiempo5==true){puntuacion=puntuacion+chlobo;}
+            
+            //puntuacion libros no
+            if(nolibro1==true){puntuacion=puntuacion-nviento;}
+            if(nolibro2==true){puntuacion=puntuacion-thsabio;}
+            if(nolibro3==true){puntuacion=puntuacion-vsinvisible;}
+            if(nolibro4==true){puntuacion=puntuacion+niebla;}
+            if(nolibro5==true){puntuacion=puntuacion+chlobo;}
+            
+            //puntuacion videojuegos
+            if(play1){puntuacion=puntuacion+halo4;}
+            if(play2){puntuacion=puntuacion+halo3;}
+            if(play3){puntuacion=puntuacion+gowar;}
+            if(play4){puntuacion=puntuacion+tlozelda;}
+            if(play5){puntuacion=puntuacion+scraft;}
+            
+            //puntuacion serie
+            if(programa1==true){puntuacion=puntuacion+bbteory;}
+            if(programa2==true){puntuacion=puntuacion+cctmadre;}
+            if(programa3==true){puntuacion=puntuacion+drhouse;}
+            if(programa4==true){puntuacion=puntuacion+twdead;}
+            if(programa5==true){puntuacion=puntuacion+gothrones;}
+            
+            //puntuacion vidamuerte
+            if(duda1==true){puntuacion=puntuacion+creo;}
+            if(duda2==true){puntuacion=puntuacion-nocreo;} 
             
             
             //Resultados
-            if(iq>0){ alert("Tu puntuacion es intelectual es: "+puntuacion); }
-            
+            if(puntuacion==170){ alert("Imprecionante  "+puntuacion); }
+            if(puntuacion>60&&puntuacion<170){ alert("muy bien  "+puntuacion); }
+            if(puntuacion<70){ alert("No me conoces  "+puntuacion); }
             location.reload(true);
+            location.reload(true);
+            
+            
+            //Resultados
+           
         }
     </script>
 </head>
@@ -111,9 +184,9 @@
         <div class="radio">
             <h1 align="center">Veamos que tanto me conoces</h1><br>
             <h2>&#191;En qu&#233; a&#241;o nac&#237;&#63;</h2>
-            <input type="radio" id="año94" name="m1"checked><label for="año94">1994</label>
-            <input type="radio" id="año95" name="m1"><label for="año95">1995</label>  
-            <input type="radio" id="año96" name="m1"><label for="año96">1996</label>
+            <input type="radio" id="anio94" name="m1"checked><label for="anio94">1994</label>
+            <input type="radio" id="anio95" name="m1"><label for="anio95">1995</label>  
+            <input type="radio" id="anio96" name="m1"><label for="anio96">1996</label>
             
             <br>
             <br>
